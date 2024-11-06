@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula Calculator</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <form id="heronsFormula">
+      <p>Heron's Formula</p>
+      <label for="sideA">Side A:</label><br />
+      <input type="number" id="sideA" name="sideA" step="any" min="0" /><br />
+      <label for="sideB">Side B:</label><br />
+      <input type="number" id="sideB" name="sideB" step="any" min="0" /><br />
+      <label for="sideC">Side C:</label><br />
+      <input type="number" id="sideC" name="sideC" step="any" min="0" /><br />
+      <label for="areaResults">Area (Result)</label><br />
+      <input type="text" id="areaResults" name="areaResults" readonly /><br />
+      <input type="submit" value="Calculate" />
+    </form>
+    <form id="ambiguousCase">
+      <p>Ambiguous Case</p>
+      <label for="angleA">Angle A:</label><br />
+      <input type="number" id="angleA" name="angleA" step="any" min="0" max="179" /><br />
+      <label for="sideA_Ambiguous">Side A:</label><br />
+      <input type="number" id="sideAAmbiguous" name="sideA" step="any" min="0" /><br />
+      <label for="sideB_Ambiguous">Side B:</label><br />
+      <input type="number" id="sideBAmbiguous" name="sideBAmbiguous" step="any" min="0" /><br />
+      <label for="triangleTypeResults">Triangle Type (Result)</label><br />
+      <input type="text" id="triangleTypeResults" name="triangleTypeResults" readonly /><br />
+      <input type="submit" value="Calculate" />
+    </form>
+    <form id="newtonsMethod">
+      <p>Newton's Method</p>
+      <label for="rootGuess">Root Guess:</label><br />
+      <input type="text" id="rootGuess" name="rootGuess" /><br />
+      <label for="rootResults">Root Approximation (Result)</label><br />
+      <input type="text" id="rootResults" name="rootResults" readonly /><br />
+      <input type="submit" value="Calculate" />
+    </form>
+    <form id="polynomialFunction">
+      <p>Polynomial Function</p>
+      <label for="coefficients">Coefficients:</label><br />
+      <input type="text" id="coefficients" name="coefficients" /><br />
+      <label for="exponents">Exponents:</label><br />
+      <input type="text" id="exponents" name="exponents" /><br />
+      <label for="xValue">X Value:</label><br />
+      <input type="number" id="xValue" name="xValue" /><br />
+      <label for="polynomialFunctionResults">Polynomial Function (Result)</label><br />
+      <input type="text" id="polynomialFunctionResults" name="polynomialFunctionResults" readonly /><br />
+      <label for="polynomialEvaluationResults">Polynomial Evaluation (Result)</label><br />
+      <input type="text" id="polynomialEvaluationResults" name="polynomialEvaluationResults" readonly /><br />
+      <input type="submit" value="Calculate" />
+    </form>
+  </div>
+  <script defer src="script.js"></script>
+</body>
+
+</html>
