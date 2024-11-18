@@ -1,9 +1,11 @@
 import { useState } from 'react';
+
 function AmbiguousCaseFormula() {
   const [sA, setsA] = useState("");
   const [aA, setaA] = useState("");
   const [sB, setsB] = useState("");
   const [triangleCase, setCase] = useState("");
+
   function ambiguousCaseFormula(e) {
     e.preventDefault();
     const radAA = aA * (Math.PI / 180);
@@ -20,6 +22,7 @@ function AmbiguousCaseFormula() {
       setCase("One Triangle");
     }
   }
+
   return (
     <form onSubmit={(e) => ambiguousCaseFormula(e)}>
       <p>Ambiguous Case</p>

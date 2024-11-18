@@ -1,8 +1,8 @@
 import './App.css'
-import AmbiguousCaseFormula from "./Components/AmbiguousCaseFormula"
-import HeronsFormula from "./Components/Heron'sFormula"
-import NewtonsMethod from "./Components/Newton'sMethod"
-import PolynomialFunction from "./Components/PolynomialFunction"
+import AmbiguousCaseFormula from "./components/AmbiguousCaseFormula"
+import HeronsFormula from "./components/Heron'sFormula"
+import NewtonsMethod from "./components/Newton'sMethod"
+import PolynomialFunction from "./components/PolynomialFunction"
 
 function App() {
   return (
