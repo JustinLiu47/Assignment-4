@@ -1,13 +1,13 @@
 import { useState } from 'react';
 function AmbiguousCaseFormula() {
-  const [sA, setsA] = useState(0);
-  const [aA, setaA] = useState(0);
-  const [sB, setsB] = useState(0);
-  const [triangleCase, setCase] = useState("Press Calulate");
+  const [sA, setsA] = useState("");
+  const [aA, setaA] = useState("");
+  const [sB, setsB] = useState("");
+  const [triangleCase, setCase] = useState("");
   function ambiguousCaseFormula(e) {
     e.preventDefault();
     const radAA = aA * (Math.PI / 180);
-    const h = sB * Math.sin(RadAA);
+    const h = sB * Math.sin(radAA);
     if (aA > 90) {
       setCase((sA <= sB) ? "No Triangle" : "One Triangle");
     } else if (aA === 90) {

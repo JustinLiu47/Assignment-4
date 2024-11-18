@@ -6,13 +6,13 @@ import PolynomialFunction from "./Components/PolynomialFunction"
 
 function App() {
   return (
-    <div id="form-container">
-        <AmbiguousCaseFormula />
-        <NewtonsMethod />
-        <HeronsFormula />
-        <PolynomialFunction />
+    <div class="form-container">
+      <HeronsFormula />
+      <AmbiguousCaseFormula />
+      <NewtonsMethod />
+      <PolynomialFunction />
     </div>
   );
 }
 
-export default App
+export default App;

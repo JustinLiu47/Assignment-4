@@ -1,9 +1,9 @@
 import { useState } from 'react';
 function HeronsFormula() {
-    const [a, setA] = useState(0);
-    const [b, setB] = useState(0);
-    const [c, setC] = useState(0);
-    const [areaResults, setArea] = useState("Press Calulate");
+    const [a, setA] = useState("");
+    const [b, setB] = useState("");
+    const [c, setC] = useState("");
+    const [areaResults, setArea] = useState("");
     function heronsFormula(e) {
       e.preventDefault();
       const answer = 0.25 * Math.sqrt(4 * a ** 2 * b ** 2 - (a ** 2 + b ** 2 - c ** 2) ** 2);
